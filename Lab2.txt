@@ -1,0 +1,393 @@
+(30) Telnet
+
+Connected to ubeje.xyz.
+Escape character is '^]'.
+GET /index.html
+<html>
+        <body>
+                Hello world
+        </body>
+</html>
+
+-----------------------------------
+(10) Tail
+
+44.232.3.206 - - [21/Jan/2021:17:58:48 +0000] "GET /index.html" 200 46 "-" "-"
+45.155.205.108 - - [21/Jan/2021:18:09:46 +0000] "GET /index.php?s=/Index/\x5Cthink\x5Capp/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP21 HTTP/1.1" 404 197 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+45.155.205.108 - - [21/Jan/2021:18:09:46 +0000] "POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 197 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+45.155.205.108 - - [21/Jan/2021:18:09:46 +0000] "GET /wp-content/plugins/wp-file-manager/readme.txt HTTP/1.1" 404 197 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+45.155.205.108 - - [21/Jan/2021:18:09:46 +0000] "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 200 66 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+45.155.205.108 - - [21/Jan/2021:18:09:46 +0000] "GET /solr/admin/info/system?wt=json HTTP/1.1" 404 197 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+45.155.205.108 - - [21/Jan/2021:18:09:47 +0000] "POST /Autodiscover/Autodiscover.xml HTTP/1.1" 404 197 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+45.155.205.108 - - [21/Jan/2021:18:09:47 +0000] "GET /console/ HTTP/1.1" 404 197 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+45.155.205.108 - - [21/Jan/2021:18:09:47 +0000] "POST /api/jsonws/invoke HTTP/1.1" 404 197 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+45.155.205.108 - - [21/Jan/2021:18:09:48 +0000] "GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> HTTP/1.1" 200 66 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+45.155.205.108 - - [21/Jan/2021:18:09:49 +0000] "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 197 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+198.20.124.218 - - [21/Jan/2021:18:11:24 +0000] "GET / HTTP/1.1" 200 66 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
+190.104.120.0 - - [21/Jan/2021:18:16:39 +0000] "GET /andrea/lab02.txt HTTP/1.1" 200 3189 "-" "WhatsApp/2.20.206.24 A"
+181.209.195.165 - - [21/Jan/2021:18:17:10 +0000] "GET /andrea/lab02.txt HTTP/1.1" 200 3189 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36"
+44.232.3.206 - - [21/Jan/2021:18:19:31 +0000] "GET /index.html" 200 46 "-" "-"
+
+-----------------------------------
+(5) RAM
+
+TOTAL: 475 MB
+USED: 193MB
+
+-----------------------------------
+(5) IP
+
+default via 172.31.0.1 dev eth0 proto dhcp src 172.31.0.17 metric 100
+172.31.0.0/24 dev eth0 proto kernel scope link src 172.31.0.17
+172.31.0.1 dev eth0 proto dhcp scope link src 172.31.0.17 metric 100
+
+-----------------------------------
+(20) NETSTAT
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      -
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      -
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      -
+tcp6       0      0 :::80                   :::*                    LISTEN      -
+tcp6       0      0 :::22                   :::*                    LISTEN      -
+udp        0      0 172.31.0.17:68          0.0.0.0:*                           -
+udp        0      0 127.0.0.53:53           0.0.0.0:* 				-
+
+-----------------------------------
+(30) SS
+
+SUMARRY:
+Total: 193
+TCP:   13 (estab 8, closed 0, orphaned 0, timewait 0)
+
+Transport Total     IP        IPv6
+RAW       1         0         1
+UDP       2         2         0
+TCP       13        11        2
+INET      16        13        3
+FRAG      0         0         0
+
+LISTENING:
+Netid State  Recv-Q  Send-Q      Local Address:Port   Peer Address:Port Process
+udp   UNCONN 0       0        172.31.0.17%eth0:68          0.0.0.0:*
+udp   UNCONN 0       0           127.0.0.53%lo:53          0.0.0.0:*
+tcp   LISTEN 0       511               0.0.0.0:80          0.0.0.0:*
+tcp   LISTEN 0       4096        127.0.0.53%lo:53          0.0.0.0:*
+tcp   LISTEN 0       128               0.0.0.0:22          0.0.0.0:*
+tcp   LISTEN 0       511                  [::]:80             [::]:*
+tcp   LISTEN 0       128                  [::]:22             [::]:*
+
+TCP:
+State  Recv-Q  Send-Q    Local Address:Port        Peer Address:Port   Process
+ESTAB  0       0           172.31.0.17:ssh        190.148.53.64:5502
+ESTAB  0       64          172.31.0.17:ssh      181.209.195.165:13421
+ESTAB  0       0           172.31.0.17:ssh      181.209.195.165:3925
+ESTAB  0       0           172.31.0.17:ssh       181.209.150.71:41234
+ESTAB  0       0           172.31.0.17:ssh      181.209.195.165:14950
+ESTAB  0       0           172.31.0.17:ssh      181.209.195.165:9383
+ESTAB  0       0           172.31.0.17:ssh      181.209.195.165:11761
+ESTAB  0       0           172.31.0.17:ssh      181.209.195.215:47059
+ESTAB  0       0           172.31.0.17:ssh       181.209.150.71:39897
+
+NUMERICO:
+Netid      State       Recv-Q      Send-Q                                 Local Address:Port                  Peer Address:Port        Process
+u_str      ESTAB       0           0                        /run/dbus/system_bus_socket 314147                           * 314146
+u_str      ESTAB       0           0                                                  * 363636                           * 0
+u_str      ESTAB       0           0                        /run/systemd/journal/stdout 292688                           * 292686
+u_str      ESTAB       0           0                                                  * 19164                            * 19165
+u_str      ESTAB       0           0                        /run/systemd/journal/stdout 279210                           * 279204
+u_str      ESTAB       0           0                        /run/systemd/journal/stdout 14575                            * 14574
+u_str      ESTAB       0           0                        /run/systemd/journal/stdout 279571                           * 279570
+u_str      ESTAB       0           0                                                  * 292276                           * 292281
+u_str      ESTAB       0           0                                                  * 314146                           * 314147
+u_str      ESTAB       0           0                                                  * 294246                           * 294248
+u_str      ESTAB       0           0                                                  * 357734                           * 0
+u_str      ESTAB       0           0                                                  * 293643                           * 293645
+u_str      ESTAB       0           0                                                  * 354891                           * 0
+u_str      ESTAB       0           0                        /run/dbus/system_bus_socket 292294                           * 292293
+u_str      ESTAB       0           0                                                  * 365780                           * 365779
+u_str      ESTAB       0           0                                                  * 293089                           * 293091
+u_str      ESTAB       0           0                                                  * 261350                           * 261351
+u_str      ESTAB       0           0                        /run/systemd/journal/stdout 314102                           * 314100
+u_str      ESTAB       0           0                        /run/dbus/system_bus_socket 19833                            * 19832
+u_str      ESTAB       0           0                        /run/systemd/journal/stdout 19713                            * 19712
+u_str      ESTAB       0           0                        /run/systemd/journal/stdout 261351                           * 261350
+u_str      ESTAB       0           0                        /run/systemd/journal/stdout 293091                           * 293089
+u_str      ESTAB       0           0                                                  * 18928                            * 19155
+u_str      ESTAB       0           0                                                  * 362300                           * 0
+u_str      ESTAB       0           0                                                  * 279204                           * 279210
+u_str      ESTAB       0           0                                                  * 32434                            * 32433
+u_str      ESTAB       0           0                                                  * 366437                           * 0
+u_str      ESTAB       0           0                                                  * 292698                           * 292699
+u_str      ESTAB       0           0                                                  * 32433                            * 32434
+u_str      ESTAB       0           0                                                  * 355172                           * 355171
+u_str      ESTAB       0           0                        /run/dbus/system_bus_socket 293118                           * 293117
+u_str      ESTAB       0           0                                                  * 292293                           * 292294
+u_str      ESTAB       0           0                                                  * 19832                            * 19833
+u_str      ESTAB       0           0                        /run/systemd/journal/stdout 293645                           * 293643
+u_str      ESTAB       0           0                        /run/dbus/system_bus_socket 19155                            * 18928
+u_str      ESTAB       0           0                                                  * 314100                           * 314102
+u_str      ESTAB       0           0                                                  * 293117                           * 293118
+u_str      ESTAB       0           0                                                  * 279570                           * 279571
+u_str      ESTAB       0           0                        /run/systemd/journal/stdout 292281                           * 292276
+u_str      ESTAB       0           0                                                  * 355171                           * 355172
+u_str      ESTAB       0           0                                                  * 361505                           * 0
+u_str      ESTAB       0           0                                                  * 19165                            * 19164
+u_str      ESTAB       0           0                                                  * 359847                           * 0
+u_str      ESTAB       0           0                        /run/systemd/journal/stdout 294248                           * 294246
+u_str      ESTAB       0           0                                                  * 365779                           * 365780
+u_str      ESTAB       0           0                                                  * 19712                            * 19713
+u_str      ESTAB       0           0                                                  * 365039                           * 0
+u_str      ESTAB       0           0                                                  * 292686                           * 292688
+u_str      ESTAB       0           0                                                  * 14574                            * 14575
+u_str      ESTAB       0           0                        /run/dbus/system_bus_socket 292699                           * 292698
+u_str      ESTAB       0           0                                                  * 17608                            * 18761
+u_str      ESTAB       0           0                                                  * 367189                           * 367188
+u_str      ESTAB       0           0                        /run/systemd/journal/stdout 18761                            * 17608
+u_str      ESTAB       0           0                                                  * 19148                            * 19147
+u_str      ESTAB       0           0                                                  * 20113                            * 20112
+u_str      ESTAB       0           0                        /run/dbus/system_bus_socket 292579                           * 292578
+u_str      ESTAB       0           0                                                  * 20112                            * 20113
+u_str      ESTAB       0           0                                                  * 358003                           * 358002
+u_str      ESTAB       0           0                                                  * 262890                           * 262891
+u_str      ESTAB       0           0                                                  * 292578                           * 292579
+u_str      ESTAB       0           0                        /run/systemd/journal/stdout 18764                            * 17679
+u_str      ESTAB       0           0                        /run/systemd/journal/stdout 291777                           * 291776
+u_str      ESTAB       0           0                                                  * 358002                           * 358003
+u_str      ESTAB       0           0                        /run/dbus/system_bus_socket 279573                           * 279572
+u_str      ESTAB       0           0                                                  * 367188                           * 367189
+u_str      ESTAB       0           0                                                  * 18184                            * 18770
+u_str      ESTAB       0           0                                                  * 19147                            * 19148
+u_str      ESTAB       0           0                                                  * 363025                           * 363024
+u_str      ESTAB       0           0                                                  * 362239                           * 362240
+u_str      ESTAB       0           0                        /run/systemd/journal/stdout 18770                            * 18184
+u_str      ESTAB       0           0                        /run/dbus/system_bus_socket 20108                            * 20107
+u_str      ESTAB       0           0                                                  * 364381                           * 364382
+u_str      ESTAB       0           0                /var/lib/amazon/ssm/ipc/termination 262888                           * 262887
+u_str      ESTAB       0           0                                                  * 363024                           * 363025
+u_str      ESTAB       0           0                                                  * 17679                            * 18764
+u_str      ESTAB       0           0                                                  * 360543                           * 360542
+u_str      ESTAB       0           0                        /run/dbus/system_bus_socket 293686                           * 293685
+u_str      ESTAB       0           0                                                  * 291776                           * 291777
+u_str      ESTAB       0           0                                                  * 262887                           * 262888
+u_str      ESTAB       0           0                                                  * 360542                           * 360543
+u_str      ESTAB       0           0                     /var/lib/amazon/ssm/ipc/health 262891                           * 262890
+u_str      ESTAB       0           0                                                  * 20107                            * 20108
+u_str      ESTAB       0           0                                                  * 364382                           * 364381
+u_str      ESTAB       0           0                                                  * 362240                           * 362239
+u_str      ESTAB       0           0                                                  * 279572                           * 279573
+u_str      ESTAB       0           0                                                  * 293685                           * 293686
+icmp6      UNCONN      0           0                                             *%eth0:58                               *:*
+tcp        ESTAB       0           64                                       172.31.0.17:22                 181.209.195.165:13421
+tcp        ESTAB       0           0                                        172.31.0.17:22                 181.209.195.165:3925
+tcp        ESTAB       0           0                                        172.31.0.17:22                  181.209.150.71:41234
+tcp        ESTAB       0           0                                        172.31.0.17:22                 181.209.195.165:14950
+tcp        ESTAB       0           0                                        172.31.0.17:22                 181.209.195.165:9383
+tcp        ESTAB       0           0                                        172.31.0.17:22                 181.209.195.165:11761
+tcp        ESTAB       0           0                                        172.31.0.17:22                 181.209.195.215:47059
+tcp        ESTAB       0           0                                        172.31.0.17:22                  181.209.150.71:39897
+
+MEMORY:
+Netid     State      Recv-Q     Send-Q                               Local Address:Port                 Peer Address:Port       Process
+u_str     ESTAB      0          0                      /run/dbus/system_bus_socket 314147                          * 314146      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 363636                          * 0           skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/systemd/journal/stdout 292688                          * 292686      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 19164                           * 19165       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/systemd/journal/stdout 279210                          * 279204      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/systemd/journal/stdout 14575                           * 14574       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/systemd/journal/stdout 279571                          * 279570      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 292276                          * 292281      skmem:(r0,rb212992,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 314146                          * 314147      skmem:(r0,rb425984,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 294246                          * 294248      skmem:(r0,rb212992,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 357734                          * 0           skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 293643                          * 293645      skmem:(r0,rb212992,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 354891                          * 0           skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/dbus/system_bus_socket 292294                          * 292293      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 365780                          * 365779      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 293089                          * 293091      skmem:(r0,rb212992,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 261350                          * 261351      skmem:(r0,rb212992,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/systemd/journal/stdout 314102                          * 314100      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/dbus/system_bus_socket 19833                           * 19832       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/systemd/journal/stdout 19713                           * 19712       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/systemd/journal/stdout 261351                          * 261350      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/systemd/journal/stdout 293091                          * 293089      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 18928                           * 19155       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 362300                          * 0           skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 279204                          * 279210      skmem:(r0,rb212992,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 32434                           * 32433       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 366437                          * 0           skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 292698                          * 292699      skmem:(r0,rb425984,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 32433                           * 32434       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 355172                          * 355171      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/dbus/system_bus_socket 293118                          * 293117      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 292293                          * 292294      skmem:(r0,rb425984,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 19832                           * 19833       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/systemd/journal/stdout 293645                          * 293643      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/dbus/system_bus_socket 19155                           * 18928       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 314100                          * 314102      skmem:(r0,rb212992,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 293117                          * 293118      skmem:(r0,rb425984,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 279570                          * 279571      skmem:(r0,rb212992,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/systemd/journal/stdout 292281                          * 292276      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 355171                          * 355172      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 361505                          * 0           skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 19165                           * 19164       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 359847                          * 0           skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/systemd/journal/stdout 294248                          * 294246      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 365779                          * 365780      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 19712                           * 19713       skmem:(r0,rb212992,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 365039                          * 0           skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 292686                          * 292688      skmem:(r0,rb212992,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 14574                           * 14575       skmem:(r0,rb212992,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/dbus/system_bus_socket 292699                          * 292698      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 17608                           * 18761       skmem:(r0,rb212992,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 367189                          * 367188      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/systemd/journal/stdout 18761                           * 17608       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 19148                           * 19147       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 20113                           * 20112       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/dbus/system_bus_socket 292579                          * 292578      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 20112                           * 20113       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 358003                          * 358002      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 262890                          * 262891      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 292578                          * 292579      skmem:(r0,rb425984,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/systemd/journal/stdout 18764                           * 17679       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/systemd/journal/stdout 291777                          * 291776      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 358002                          * 358003      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/dbus/system_bus_socket 279573                          * 279572      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 367188                          * 367189      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 18184                           * 18770       skmem:(r0,rb212992,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 19147                           * 19148       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 363025                          * 363024      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 362239                          * 362240      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/systemd/journal/stdout 18770                           * 18184       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/dbus/system_bus_socket 20108                           * 20107       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 364381                          * 364382      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0              /var/lib/amazon/ssm/ipc/termination 262888                          * 262887      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 363024                          * 363025      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 17679                           * 18764       skmem:(r0,rb212992,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 360543                          * 360542      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                      /run/dbus/system_bus_socket 293686                          * 293685      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 291776                          * 291777      skmem:(r0,rb212992,t0,tb425984,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 262887                          * 262888      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 360542                          * 360543      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                   /var/lib/amazon/ssm/ipc/health 262891                          * 262890      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 20107                           * 20108       skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 364382                          * 364381      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 362240                          * 362239      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 279572                          * 279573      skmem:(r0,rb212992,t0,tb212992,f0,w0,o0,bl0,d0)
+u_str     ESTAB      0          0                                                * 293685                          * 293686      skmem:(r0,rb425984,t0,tb425984,f0,w0,o0,bl0,d0)
+icmp6     UNCONN     0          0                                           *%eth0:ipv6-icmp                       *:*
+         skmem:(r0,rb212992,t0,tb212992,f0,w0,o64,bl0,d0)
+tcp       ESTAB      0          64                                     172.31.0.17:ssh               181.209.195.165:13421
+         skmem:(r0,rb131072,t0,tb87040,f10944,w1344,o0,bl0,d0)
+tcp       ESTAB      0          0                                      172.31.0.17:ssh               181.209.195.165:3925
+         skmem:(r0,rb131072,t0,tb87040,f0,w0,o0,bl0,d2)
+tcp       ESTAB      0          0                                      172.31.0.17:ssh                181.209.150.71:41234
+         skmem:(r0,rb131072,t0,tb87040,f0,w0,o0,bl0,d1)
+tcp       ESTAB      0          0                                      172.31.0.17:ssh               181.209.195.165:14950
+         skmem:(r0,rb131072,t0,tb87040,f0,w0,o0,bl0,d0)
+tcp       ESTAB      0          0                                      172.31.0.17:ssh               181.209.195.165:9383
+         skmem:(r0,rb131072,t0,tb87040,f0,w0,o0,bl0,d0)
+tcp       ESTAB      0          0                                      172.31.0.17:ssh               181.209.195.165:11761
+         skmem:(r0,rb131072,t0,tb87040,f0,w0,o0,bl0,d0)
+tcp       ESTAB      0          0                                      172.31.0.17:ssh               181.209.195.215:47059
+         skmem:(r0,rb131072,t0,tb87040,f0,w0,o0,bl0,d0)
+tcp       ESTAB      0          0                                      172.31.0.17:ssh                181.209.150.71:39897
+         skmem:(r0,rb131072,t0,tb87040,f0,w0,o0,bl0,d0)
+
+PROCESOS DE SOCKET:
+Netid    State     Recv-Q    Send-Q                              Local Address:Port                 Peer Address:Port      Process
+u_str    ESTAB     0         0                     /run/dbus/system_bus_socket 314147                          * 314146
+u_str    ESTAB     0         0                                               * 363636                          * 0
+u_str    ESTAB     0         0                     /run/systemd/journal/stdout 292688                          * 292686
+u_str    ESTAB     0         0                                               * 19164                           * 19165
+u_str    ESTAB     0         0                     /run/systemd/journal/stdout 279210                          * 279204
+u_str    ESTAB     0         0                     /run/systemd/journal/stdout 14575                           * 14574
+u_str    ESTAB     0         0                     /run/systemd/journal/stdout 279571                          * 279570
+u_str    ESTAB     0         0                                               * 292276                          * 292281
+u_str    ESTAB     0         0                                               * 314146                          * 314147     users:(("systemd",pid=38518,fd=20))
+u_str    ESTAB     0         0                                               * 294246                          * 294248
+u_str    ESTAB     0         0                                               * 357734                          * 0
+u_str    ESTAB     0         0                                               * 293643                          * 293645
+u_str    ESTAB     0         0                                               * 354891                          * 0
+u_str    ESTAB     0         0                     /run/dbus/system_bus_socket 292294                          * 292293
+u_str    ESTAB     0         0                                               * 365780                          * 365779
+u_str    ESTAB     0         0                                               * 293089                          * 293091
+u_str    ESTAB     0         0                                               * 261350                          * 261351
+u_str    ESTAB     0         0                     /run/systemd/journal/stdout 314102                          * 314100
+u_str    ESTAB     0         0                     /run/dbus/system_bus_socket 19833                           * 19832
+u_str    ESTAB     0         0                     /run/systemd/journal/stdout 19713                           * 19712
+u_str    ESTAB     0         0                     /run/systemd/journal/stdout 261351                          * 261350
+u_str    ESTAB     0         0                     /run/systemd/journal/stdout 293091                          * 293089
+u_str    ESTAB     0         0                                               * 18928                           * 19155
+u_str    ESTAB     0         0                                               * 362300                          * 0
+u_str    ESTAB     0         0                                               * 279204                          * 279210
+u_str    ESTAB     0         0                                               * 32434                           * 32433
+u_str    ESTAB     0         0                                               * 366437                          * 0
+u_str    ESTAB     0         0                                               * 292698                          * 292699
+u_str    ESTAB     0         0                                               * 32433                           * 32434
+u_str    ESTAB     0         0                                               * 355172                          * 355171
+u_str    ESTAB     0         0                     /run/dbus/system_bus_socket 293118                          * 293117
+u_str    ESTAB     0         0                                               * 292293                          * 292294
+u_str    ESTAB     0         0                                               * 19832                           * 19833
+u_str    ESTAB     0         0                     /run/systemd/journal/stdout 293645                          * 293643
+u_str    ESTAB     0         0                     /run/dbus/system_bus_socket 19155                           * 18928
+u_str    ESTAB     0         0                                               * 314100                          * 314102     users:(("systemd",pid=38518,fd=2),("systemd",pid=38518,fd=1))
+u_str    ESTAB     0         0                                               * 293117                          * 293118
+u_str    ESTAB     0         0                                               * 279570                          * 279571
+u_str    ESTAB     0         0                     /run/systemd/journal/stdout 292281                          * 292276
+u_str    ESTAB     0         0                                               * 355171                          * 355172
+u_str    ESTAB     0         0                                               * 361505                          * 0
+u_str    ESTAB     0         0                                               * 19165                           * 19164
+u_str    ESTAB     0         0                                               * 359847                          * 0
+u_str    ESTAB     0         0                     /run/systemd/journal/stdout 294248                          * 294246
+u_str    ESTAB     0         0                                               * 365779                          * 365780
+u_str    ESTAB     0         0                                               * 19712                           * 19713
+u_str    ESTAB     0         0                                               * 365039                          * 0
+u_str    ESTAB     0         0                                               * 292686                          * 292688
+u_str    ESTAB     0         0                                               * 14574                           * 14575
+u_str    ESTAB     0         0                     /run/dbus/system_bus_socket 292699                          * 292698
+u_str    ESTAB     0         0                                               * 17608                           * 18761
+u_str    ESTAB     0         0                                               * 367189                          * 367188
+u_str    ESTAB     0         0                     /run/systemd/journal/stdout 18761                           * 17608
+u_str    ESTAB     0         0                                               * 19148                           * 19147
+u_str    ESTAB     0         0                                               * 20113                           * 20112
+u_str    ESTAB     0         0                     /run/dbus/system_bus_socket 292579                          * 292578
+u_str    ESTAB     0         0                                               * 20112                           * 20113
+u_str    ESTAB     0         0                                               * 358003                          * 358002
+u_str    ESTAB     0         0                                               * 262890                          * 262891
+u_str    ESTAB     0         0                                               * 292578                          * 292579
+u_str    ESTAB     0         0                     /run/systemd/journal/stdout 18764                           * 17679
+u_str    ESTAB     0         0                     /run/systemd/journal/stdout 291777                          * 291776
+u_str    ESTAB     0         0                                               * 358002                          * 358003
+u_str    ESTAB     0         0                     /run/dbus/system_bus_socket 279573                          * 279572
+u_str    ESTAB     0         0                                               * 367188                          * 367189
+u_str    ESTAB     0         0                                               * 18184                           * 18770
+u_str    ESTAB     0         0                                               * 19147                           * 19148
+u_str    ESTAB     0         0                                               * 363025                          * 363024
+u_str    ESTAB     0         0                                               * 362239                          * 362240
+u_str    ESTAB     0         0                     /run/systemd/journal/stdout 18770                           * 18184
+u_str    ESTAB     0         0                     /run/dbus/system_bus_socket 20108                           * 20107
+u_str    ESTAB     0         0                                               * 364381                          * 364382
+u_str    ESTAB     0         0             /var/lib/amazon/ssm/ipc/termination 262888                          * 262887
+u_str    ESTAB     0         0                                               * 363024                          * 363025
+u_str    ESTAB     0         0                                               * 17679                           * 18764
+u_str    ESTAB     0         0                                               * 360543                          * 360542
+u_str    ESTAB     0         0                     /run/dbus/system_bus_socket 293686                          * 293685
+u_str    ESTAB     0         0                                               * 291776                          * 291777
+u_str    ESTAB     0         0                                               * 262887                          * 262888
+u_str    ESTAB     0         0                                               * 360542                          * 360543
+u_str    ESTAB     0         0                  /var/lib/amazon/ssm/ipc/health 262891                          * 262890
+u_str    ESTAB     0         0                                               * 20107                           * 20108
+u_str    ESTAB     0         0                                               * 364382                          * 364381
+u_str    ESTAB     0         0                                               * 362240                          * 362239
+u_str    ESTAB     0         0                                               * 279572                          * 279573
+u_str    ESTAB     0         0                                               * 293685                          * 293686
+icmp6    UNCONN    0         0                                          *%eth0:ipv6-icmp                       *:*
+tcp      ESTAB     0         64                                    172.31.0.17:ssh               181.209.195.165:13421
+tcp      ESTAB     0         0                                     172.31.0.17:ssh               181.209.195.165:3925
+tcp      ESTAB     0         0                                     172.31.0.17:ssh                181.209.150.71:41234
+tcp      ESTAB     0         0                                     172.31.0.17:ssh               181.209.195.165:14950
+tcp      ESTAB     0         0                                     172.31.0.17:ssh               181.209.195.165:9383
+tcp      ESTAB     0         0                                     172.31.0.17:ssh               181.209.195.165:11761
+tcp      ESTAB     0         0                                     172.31.0.17:ssh               181.209.195.215:47059
+tcp      ESTAB     0         0                                     172.31.0.17:ssh                181.209.150.71:39897
