@@ -1,0 +1,158 @@
+.hk{
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.horn1{
+  width: 66px;
+  height: 130px;
+  /*rgba(229, 225, 222, 1)*/
+  background: rgba(229, 225, 222, 1);
+  border-radius: 74% 26% 27% 73% / 62% 43% 57% 38%  ;
+  transform: translate(-75px, 200px);
+}
+.horn2{
+  width: 66px;
+  height: 130px;
+  background: rgba(229, 225, 222, 1);
+  border-radius: 26% 74% 73% 27% / 43% 62% 38% 57%;
+  transform: translate(75px, 70px);
+}
+.horncorrect{
+  width: 154px;
+  height: 90px;
+  background: white;
+  border-radius: 50% 50% 50% 50% / 73% 73% 27% 27% ;
+  transform: translate(25px, 0px);
+  z-index: -1;
+}
+.horncorrect2{
+  width: 154px;
+  height: 90px;
+  background: white;
+  border-radius: 50% 50% 50% 50% / 73% 73% 27% 27% ;
+  transform: translate(-120px, 0px);
+  z-index: -1;
+}
+.head{
+  width: 173px;
+  height: 177px;
+  /*rgba(229, 225, 222, 1)*/
+  background: rgba(229, 225, 222, 1);
+  border-radius: 71% 71% 57% 57% / 91% 91% 75% 75%  ;
+  z-index: 2;
+}
+
+.eye{
+  width: 53px;
+  height: 77px;
+  background: black;
+  border-radius: 59% 41% 61% 39% / 53% 29% 71% 47% ;
+  transform: translate(15px, 29px)
+}
+
+.eye2{
+  width: 53px;
+  height: 77px;
+  background: black;
+  border-radius: 41% 59% 39% 61% / 29% 53% 47% 71%  ;
+  transform: translate(105px, -47px)
+}
+
+.body{
+  width: 99px;
+  height: 211px;
+  background: black;
+  border-radius: 50% 50% 50% 50% / 56% 56% 44% 44% ;
+  transform: translate(0px, -15px);
+  z-index: 2;
+}
+.details{
+  z-index: 4;
+}
+.sword{
+  width: 22px;
+  height: 309px;
+  background: rgba(243, 243, 243, 1);
+  border-radius: 50% 50% 50% 50% / 97% 97% 3% 3% ;
+  transform: translate(0px, -500px);
+}
+.hilt{
+  width: 8px;
+  height: 57px;
+  background:  rgba(243, 243, 243, 1);
+  border-radius: 50% 50% 50% 50% / 36% 36% 64% 64% ;
+  transform: translate(7px, -512px);
+}
+.legs{
+  width: 19px;
+  height: 69px;
+  background: white;
+  border-radius: 50% 50% 50% 50% / 10% 10% 90% 90% ;
+  transform: translate(2px, -449px);
+}
+.left{
+  width: 63px;
+  height: 38px;
+  background: black;
+  border-radius: 59% 41% 77% 23% / 70% 15% 85% 30% ;
+  transform: translate(-20px, -715px);
+  z-index: 5;
+}
+.arms{
+  z-index: 1;
+}
+.right{
+  width: 65px;
+  height: 94px;
+  background: black;
+  border-radius: 27% 81% 23% 93% / 31% 70% 38% 84%  ;
+  transform: translate(52px, -635px);
+}
+.correction{
+  width: 50px;
+  height: 84px;
+  background: rgba(51, 55, 67, 1);
+  border-radius: 12% 88% 24% 76% / 10% 100% 0% 90%  ;
+  transform: translate(0px, 11px);
+}
+.cape{
+  z-index: 3;
+}
+.sec1{
+  width: 264px;
+  height: 137px;
+  border-radius: 50%;
+  box-shadow: -50px 35px 0 0px rgba(109, 121, 145, 1);
+  transform: translate(-70px, -920px);
+}
+.sec2{
+  width: 244px;
+  height: 157px;
+  border-radius: 50%;
+  box-shadow: 50px 35px 0 0px rgba(109, 121, 145, 1);
+  transform: translate(70px, -1079px);
+}
+.sec3{
+  width: 244px;
+  height: 157px;
+  border-radius: 50%;
+  box-shadow: -50px -15px 0 0px rgba(100, 112, 136, 1);
+  transform: translate(-60px, -1055px) rotateZ(25deg);
+}
+.sec4{
+  width: 244px;
+  height: 157px;
+  border-radius: 50%;
+  box-shadow: -50px -15px 0 10px rgba(51, 55, 67, 1);
+  transform: translate(180px, -1230px) rotateZ(25deg);
+}
+.center{
+  width: 89px;
+  height: 55px;
+  background: rgba(60, 66, 80, 1);
+  border-radius: 42% 42% 29% 29% / 78% 78% 10% 10% ;
+  transform: translate(90px, -1239px);
+}
