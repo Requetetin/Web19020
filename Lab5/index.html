@@ -1,0 +1,205 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <script type="application/javascript">
+
+    document.body.style.backgroundColor = "#232526"
+
+      const input = document.createElement('input')
+      document.body.append(input)
+
+      const button = document.createElement('button')
+      button.append('send')
+      document.body.append(button)
+
+      //Funcion que devuelve fecha
+      var currentdate = new Date()
+      function fecha(){
+      	return  currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " @ "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds()
+      }
+
+      window.onload = onStart()
+
+      var cantidadMensajes = 0
+
+      function onStart(){
+      	button.style.display = "none"
+      	setTimeout(function(){
+      			window.scrollTo(0, document.body.scrollHeight)
+      		}, 500)
+      }
+      function hideButton(){
+      	if(input.value == ""){
+      		button.style.display = "none"
+      	}else{
+      		button.style.display = "inline"
+      	}
+      }
+
+      function initialFetch(){
+      		fetch('http://ubeje.xyz:3000/messages').then((r) => {
+        return r.json()
+      }).then((j) => {
+        j.forEach((mensaje) => {
+          const unMensaje = document.createElement('li')
+          const h2 = document.createElement('h2')
+          const p = document.createElement('p')
+          const h6 = document.createElement('h6')
+
+	  h2.append(mensaje.sender)
+          p.append(mensaje.message)
+          	h6.append(mensaje.date)
+
+      h2.style.color = "#009FFF"
+      	  p.style.color = "white"
+      	  	h6.style.color = "white"
+
+	  unMensaje.append(h2)
+          unMensaje.append(p)
+          	unMensaje.append(h6)
+
+          listaDeMensajes.append(unMensaje)
+          cantidadMensajes = cantidadMensajes +1
+
+        })
+      })
+      }
+
+      function fetchNew(){
+      	fetch('http://ubeje.xyz:3000/messages').then((r) => {
+        return r.json()
+      }).then((j) => {
+        if(j.length > cantidadMensajes){
+        	var i
+        	for(i=cantidadMensajes; i<j.length; i++){
+        		const unMensaje = document.createElement('li')
+		          const h2 = document.createElement('h2')
+		          const p = document.createElement('p')
+		          const h6 = document.createElement('h6')
+
+			  h2.append(j[i].sender)
+		          p.append(j[i].message)
+		          	h6.append(j[i].date)
+
+		      h2.style.color = "#009FFF"
+		      	  p.style.color = "white"
+		      	  	h6.style.color = "white"
+
+			  unMensaje.append(h2)
+		          unMensaje.append(p)
+		          	unMensaje.append(h6)
+
+		          listaDeMensajes.append(unMensaje)
+		          cantidadMensajes = cantidadMensajes +1
+        	}
+        }
+
+        })
+      }
+
+      function postMessages(){
+      	fetch('http://ubeje.xyz:3000/messages', { 
+		method: 'POST',
+                headers: {
+                   'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                  sender: "Martin",
+                  message: input.value,
+                  date: fecha(),
+                })
+          })
+      }
+
+
+      const interval = setInterval(fetchNew, 1000)
+
+      document.addEventListener('keydown', () => {
+      	if(event.key == "Enter" && input.value != ""){
+      		postMessages()
+      	}
+      })
+
+      document.addEventListener('keyup', () => {
+      	if(event.key == "Enter"){
+      		setTimeout(function(){
+      			fetchNew()
+      		}, 500)
+      		
+      	}
+      })
+
+      document.addEventListener('keyup', () => {
+      	if(event.key == "Enter"){
+      		
+      			input.value = ""
+      		
+      	}
+      })
+      document.addEventListener('keyup', () => {
+      	if(event.key == "Enter"){
+      		setTimeout(function(){
+      			window.scrollTo(0, document.body.scrollHeight)
+      		}, 850)
+      	}
+      })
+
+      input.addEventListener('input', () => {
+      	hideButton()
+      })
+      input.style.backgroundColor = "#414345"
+      input.style.color = "white"
+      input.maxLength = 140
+      input.style.bottom = "0px"
+      input.style.width = "90%"
+      input.style.height = "25px"
+      input.style.position = "fixed"
+      input.style.border = "thin solid white"
+      input.placeholder = "Message Web Seccion 10"
+
+      button.style.backgroundColor = "#1F1C2C"
+      button.style.color = "white"
+      button.style.bottom = "0px"
+      button.style.right = "100px"
+      button.style.height = "25px"
+      button.style.position = "fixed"
+      button.style.border = "thin solid white"
+      button.addEventListener('mouseover', () => {
+      		button.style.backgroundColor = "black"
+      })
+      button.addEventListener('click', () => {
+          postMessages()
+      }) 
+      button.addEventListener('click', () => {
+      	input.value = ''
+      })
+      button.addEventListener('click', () => {
+      	setTimeout(function(){
+      		fetchNew()
+      	}, 500)
+      })
+      button.addEventListener('click', () => {
+      	setTimeout(function(){
+      		window.scrollTo(0, document.body.scrollHeight)
+      	},850)
+      })
+      button.addEventListener('mouseout', () => {
+      	button.style.backgroundColor = "#1F1C2C"
+      })
+
+      
+
+      const listaDeMensajes = document.createElement('ul')
+      document.body.append(listaDeMensajes)
+
+      initialFetch()
+      
+    </script>
+  </body>
+</html>
