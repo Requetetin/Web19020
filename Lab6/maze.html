@@ -14,7 +14,7 @@
               const style = {
                 width: '208px',
                 height: '208px',
-                backgroundImage: 'url("Tree.png")'
+                backgroundImage: 'url("Tree.png")',
               }
               return <div style={style} />
             }
@@ -23,16 +23,16 @@
               const style = {
                 width: '208px',
                 height: '208px',
-                backgroundImage: 'url("TM.png")'
+                backgroundImage: 'url("TM.png")',
               }
               return <div style={style} />
             }
 
-            const Player = ({sprite}) => {
+            const Player = ({ sprite }) => {
               const style = {
                 width: '208px',
                 height: '208px',
-                backgroundImage: sprite
+                backgroundImage: sprite,
               }
               return <div style={style} />
             }
@@ -41,14 +41,14 @@
               const style = {
                 width: '208px',
                 height: '208px',
-                backgroundColor: 'white'
+                backgroundColor: 'white',
               }
               return <div style={style} />
             }
 
             const Beggining = () => {
               const center = {
-                textAlign: 'center'
+                textAlign: 'center',
               }
 
               const style = {
@@ -56,11 +56,11 @@
                 height: '240px',
                 backgroundImage: 'url("Start.png")',
                 marginRight: 'auto',
-                marginLeft: 'auto'
+                marginLeft: 'auto',
               }
 
               const text = {
-                color: 'blue'
+                color: 'blue',
               }
 
               return (
@@ -72,17 +72,18 @@
               )
             }
 
-            const Ending = ({movimientos}) => {
+            const Ending = ({ movimientos }) => {
               const center = {
-                textAlign: 'center'
+                textAlign: 'center',
               }
 
-              return(
+              return (
                 <div style={center}>
                   <h1>FELICIDADES</h1>
                   <h2>Completar el laberinto le tomo:</h2>
-                  <h3>{movimientos} movimientos</h3>
-                  <img src='Cyndaquil.gif' width='208px' height='208px' />  
+                  <h3>{movimientos}</h3>
+                  <h3>movimientos</h3>
+                  <img src="Cyndaquil.gif" alt="Animacion final" width="208px" height="208px" />
                 </div>
               )
             }
@@ -92,177 +93,142 @@
 
               const rowStyles = {
                 display: 'grid',
-                gridAutoFlow: 'column'
+                gridAutoFlow: 'column',
               }
-            
-              //Mvmnt
+
               const [playerX, setPlayerX] = React.useState(1)
               const [playerY, setPlayerY] = React.useState(1)
 
-              //Sprites
               const [sprite, setSprite] = React.useState('url(CyndaquilD.png)')
 
-              //Steps
               const [movimientos, setMovimientos] = React.useState(0)
 
-              //Screen
               const [screen, setScreen] = React.useState(1)
 
-              //Size
-              const [mazeSize, setMazeSize] = React.useState(10)
-
               const handleKeyDown = (event) => {
-                if(event.key === 'd') {
-                  setSprite(() => {
-                    return 'url(CyndaquilR.png)'
-                  })
-                  if(mazeData[playerY][playerX+1] === ' '){
+                if (event.key === 'd') {
+                  setSprite(() => ('url(CyndaquilR.png)'))
+                  if (mazeData[playerY][playerX + 1] === ' ') {
                     setPlayerX((oldValue) => {
-                      setMovimientos((oldValue) => {
-                        return oldValue +1
-                      })
+                      setMovimientos((old) => (old + 1))
                       mazeData[playerY][playerX] = ' '
-                      mazeData[playerY][playerX+1] = 'p'
-                      return oldValue+1
+                      mazeData[playerY][playerX + 1] = 'p'
+                      return oldValue + 1
                     })
                   }
-                  if(mazeData[playerY][playerX+1] === 'g'){
-                    setScreen(() => {
-                      return 0
-                    })
+                  if (mazeData[playerY][playerX + 1] === 'g') {
+                    setScreen(() => (0))
                   }
                 }
-                if(event.key === 'a') {
-                  setSprite(() => {
-                    return 'url(CyndaquilL.png)'
-                  })
-                  if(mazeData[playerY][playerX-1] === ' '){
+                if (event.key === 'a') {
+                  setSprite(() => ('url(CyndaquilL.png)'))
+                  if (mazeData[playerY][playerX - 1] === ' ') {
                     setPlayerX((oldValue) => {
-                      setMovimientos((oldValue) => {
-                        return oldValue +1
-                      })
+                      setMovimientos((old) => (old + 1))
                       mazeData[playerY][playerX] = ' '
-                      mazeData[playerY][playerX-1] = 'p'
-                      return oldValue-1
+                      mazeData[playerY][playerX - 1] = 'p'
+                      return oldValue - 1
                     })
                   }
-                  if(mazeData[playerY][playerX-1] === 'g'){
-                    setScreen(() => {
-                      return 0
-                    })
+                  if (mazeData[playerY][playerX - 1] === 'g') {
+                    setScreen(() => (0))
                   }
                 }
-                if(event.key === 'w') {
-                  setSprite(() => {
-                    return 'url(CyndaquilU.png)'
-                  })
-                  if(mazeData[playerY-1][playerX] === ' '){
+                if (event.key === 'w') {
+                  setSprite(() => ('url(CyndaquilU.png)'))
+                  if (mazeData[playerY - 1][playerX] === ' ') {
                     setPlayerY((oldValue) => {
-                      setMovimientos((oldValue) => {
-                        return oldValue +1
-                      })
+                      setMovimientos((old) => (old + 1))
                       mazeData[playerY][playerX] = ' '
-                      mazeData[playerY-1][playerX] = 'p'
-                      return oldValue-1
+                      mazeData[playerY - 1][playerX] = 'p'
+                      return oldValue - 1
                     })
                   }
-                  if(mazeData[playerY-1][playerX] === 'g'){
-                    setScreen(() => {
-                      return 0
-                    })
+                  if (mazeData[playerY - 1][playerX] === 'g') {
+                    setScreen(() => (0))
                   }
                 }
-                if(event.key === 's') {
-                  setSprite(() => {
-                    return 'url(CyndaquilD.png)'
-                  })
-                  if(mazeData[playerY+1][playerX] === ' '){
+                if (event.key === 's') {
+                  setSprite(() => ('url(CyndaquilD.png)'))
+                  if (mazeData[playerY + 1][playerX] === ' ') {
                     setPlayerY((oldValue) => {
-                      setMovimientos((oldValue) => {
-                        return oldValue +1
-                      })
+                      setMovimientos((old) => (old + 1))
                       mazeData[playerY][playerX] = ' '
-                      mazeData[playerY+1][playerX] = 'p'
-                      return oldValue+1
+                      mazeData[playerY + 1][playerX] = 'p'
+                      return oldValue + 1
                     })
                   }
-                  if(mazeData[playerY+1][playerX] === 'g'){
-                    setScreen(() => {
-                      return 0
-                    })
+                  if (mazeData[playerY + 1][playerX] === 'g') {
+                    setScreen(() => (0))
                   }
                 }
               }
 
               const handleSubmit = () => {
-                setScreen(() => {
-                  return 2
-                })
+                setScreen(() => (2))
               }
 
               const style = {
-                textAlign: 'center'
+                textAlign: 'center',
               }
 
               const button = {
                 width: '60px',
-                height: '40px'
+                height: '40px',
               }
-              
-              let mazeFetch = 'http://ubeje.xyz:3001/?type=json&w=10&h=10'
-                React.useEffect(() => {
-                  fetch(mazeFetch)
-                    .then(r => r.json())
-                    .then(r => setMazeData(r))
-                }, [])
 
-                console.log('render', mazeData)
-                if(screen === 1){
-                  return(
-                    <div>
-                      <Beggining />
-                      <div  style={style}>
-                        <button onClick={handleSubmit} style={button}>Next</button>
-                      </div>
+              const mazeFetch = 'http://ubeje.xyz:3001/?type=json&w=10&h=10'
+              React.useEffect(() => {
+                fetch(mazeFetch)
+                  .then((r) => r.json())
+                  .then((r) => setMazeData(r))
+              }, [])
+
+              if (screen === 1) {
+                return (
+                  <div>
+                    <Beggining />
+                    <div style={style}>
+                      <button type="button" onClick={handleSubmit} style={button}>Next</button>
                     </div>
-                  )
-                }
-                else if(screen > 1){
-                  return (
-                    <div tabIndex="1" onKeyDown={handleKeyDown}>
-                      {mazeData.map((row, rowIndex) => {
-                        return (
-                          <div style={rowStyles}>
-                            {row.map((cell, colIndex) => {
-                              switch(cell) {
-                                case 'p':
-                                  return <Player sprite={sprite} />
-                                case 'g':
-                                  return <Goal />
-                                case ' ':
-                                  return <Empty />
-                                default:
-                                  return <Wall />
-                              }
-                            })}
-                          </div>
-                        )
-                      })}
-                    </div>
-                  )
-                }
-                
-              
-              else{
-                return(
+                  </div>
+                )
+              }
+              if (screen > 1) {
+                return (
+                  <div role="button" tabIndex="0" onKeyDown={handleKeyDown}>
+                    {mazeData.map((row) => (
+                      (
+                        <div style={rowStyles}>
+                          {row.map((cell) => {
+                            switch (cell) {
+                              case 'p':
+                                return <Player sprite={sprite} />
+                              case 'g':
+                                return <Goal />
+                              case ' ':
+                                return <Empty />
+                              default:
+                                return <Wall />
+                            }
+                          })}
+                        </div>
+                      )
+                    ))}
+                  </div>
+                )
+              }
+              if (screen === 0) {
+                return (
                   <Ending movimientos={movimientos} />
                 )
               }
+              return 0
             }
             ReactDOM.render(
-                <Maze />,
-                htmlRoot
-            ) 
+              <Maze />,
+              htmlRoot,
+            )
         </script>
     </body>
 </html>
