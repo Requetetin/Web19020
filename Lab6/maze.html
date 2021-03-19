@@ -8,6 +8,8 @@
         <div id="root"></div>
         
         <script type="text/babel">
+            import PropTypes from 'prop-types'
+
             const htmlRoot = document.getElementById('root')
 
             const Wall = () => {
@@ -35,6 +37,10 @@
                 backgroundImage: sprite,
               }
               return <div style={style} />
+            }
+
+            Player.propTypes = {
+              sprite: PropTypes.string.isRequired,
             }
 
             const Empty = () => {
@@ -86,6 +92,10 @@
                   <img src="Cyndaquil.gif" alt="Animacion final" width="208px" height="208px" />
                 </div>
               )
+            }
+
+            Ending.propTypes = {
+              movimientos: PropTypes.number.isRequired,
             }
 
             const Maze = () => {

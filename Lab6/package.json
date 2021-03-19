@@ -8,9 +8,10 @@
     "eslint-plugin-react-hooks": "^4.2.0"
   },
   "dependencies": {
-    "eslint-plugin-html": "^6.1.2"
+    "eslint-plugin-html": "^6.1.2",
+    "prop-types": "^15.7.2"
   },
   "scripts": {
-    "lint":"eslint maze.html"
+    "lint": "eslint maze.html"
   }
 }
